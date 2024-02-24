@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-size:30px;
+        }
+    </style>
+</head>
+<body>
+    <form action="index3.php" method="post">
+        <h1>Addmais Sopping Store</h1>
+        <label for="name">Name:</label><br>  
+        <input type="text" name="name"><br>
+        <label for="Email">Email:</label><br>
+        <input type="email"  name="email"><br>
+        <label for="Address">Shipping Address</label><br>
+        <textarea name="text"></textarea><br>
+        <label for="cloth">Select Clothes Type:</label><br>
+        <select id="type" name="type">
+          <option value="T-shirt">T-shirt</option>
+          <option value="15">T-shirt 15$</option>
+          <option value="20">Shirt 20$</option>
+          <option value="25">Pants 25$</option>
+          <option value="30">Dress 30$</option>
+          <option value="35">Jacket 35$</option>
+        </select><br>
+        <label for="size">When you click on Size it expands to:</label><br>
+        <select name="size">
+          <option value="size">size</option>
+          <option value="Small">Small</option>
+          <option value="Mediam">Mediam</option>
+          <option value="Large">Large</option>
+          <option value="XL">XL</option>
+        </select>
+        <label for="Quanity">Quanity:</label><br>
+        <input type="number"  name="Quanity"><br>
+        <br>
+        <input type="submit" value="Purchise">
+      </form>
+</body>
+</html>

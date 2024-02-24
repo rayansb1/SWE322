@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form {
+ background-color:gray;
+ font-size:30px;
+}
+input{
+    font-size:25px;
+}
+
+    </style>
+</head>
+<body>
+    <form action="index2.php" method="post">
+        <label for="Fname">First Name:</label><br>  
+        <input type="text" name="Fname"><br>
+        <label for="Lname">Last Name</label><br>
+        <input type="text"  name="Lname"><br>
+        <label for="Email">Email:</label><br>
+        <input type="email"  name="email"><br>
+        <label for="Email">Check-in-Date:</label><br>
+        <input type="date" name="Idate"><br>
+        <label for="Email">Check-out-Date:</label><br>
+        <input type="date"  name="Odate"><br>
+        <label for="grade">Room type:</label><br>
+        <select id="type" name="Rtype">
+          <option value=""></option>
+          <option value="grade1">Single</option>
+          <option value="grade1">Double</option>
+        </select><br>
+        <label for="grade">Food type:</label><br>
+        <select name="Ftype">
+          <option value=""></option>
+          <option value="grade1">Muslime Food</option>
+          <option value="grade1">Non Muslime Food</option>
+        </select><br>
+        <input type="submit" value="Submit">
+      </form>
+</body>
+</html>

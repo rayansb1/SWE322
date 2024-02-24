@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            text-align:left;
+            margin-left:10px;
+        }
+        form {
+  font-family: Arial, sans-serif;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  color:rgb(156, 0, 0);
+}
+
+input[type="text"], input[type="email"], input[type="tel"], #dob {
+  width: 70%;
+  padding: 5px;
+  margin-top: 5px;
+}
+input{
+    width:5%;
+}
+
+select {
+  width: 70%;
+  padding: 5px;
+  margin-top: 5px;
+}
+
+input[type="radio"] {
+  margin-top: 5px;
+}
+
+#transportation-yes, #transportation-no {
+  margin-right: 5px;
+}
+
+input[type="submit"] {
+  width: 7%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  margin-top: 10px;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+    </style>
+</head>
+<body>
+    <h1>Student Registrition Form</h1>
+    <form action="index1.php"    method="get">
+        <label for="name">Name:</label><br>  
+        <input type="text" id="name" name="name"><br>
+        <label for="Email:"></label><br>
+        <input type="email" id="email" name="email"><br>
+        <label for="Date">Date of Birth (mm/dd/yyyy):</label><br>
+        <input type="date" id="dob" name="dob"><br>
+        <label for="grade">Grade Level:</label><br>
+        <select id="grade" name="grade">
+          <option value=""></option>
+          <option value="grade1">Grade 1</option>
+          <option value="grade2">Grade 2</option>
+          <option value="grade3">Grade 3</option>
+          <option value="grade4">Grade 4</option>
+          <option value="grade5">Grade 5</option>
+          <option value="grade6">Grade 6</option>
+        </select><br>
+        <label for="transportation">Needs School Transportation:</label><br>
+        <input type="radio" id="transportation-yes" name="transportation" value="yes">
+        <label for="transportation-yes">Yes</label><br>
+        <input type="radio" id="transportation-no" name="transportation" value="no">
+        <label for="transportation-no">No</label><br>
+        <label for="guardian">Guardian Name:</label><br>
+        <input type="text" id="guardian" name="guardian"><br>
+        <label for="address">Address:</label><br>
+        <input type="text" id="address" name="address"><br>
+        <label for="phone">Phone:</label><br>
+        <input type="tel" id="phone" name="phone"><br>
+        <input type="submit" value="SEND APPLICATION">
+      </form>
+</body>
+</html>
